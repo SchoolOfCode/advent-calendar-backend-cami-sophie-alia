@@ -12,3 +12,5 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 app.use("/api/items", adventCalendarRouter);
+
+export default app;
