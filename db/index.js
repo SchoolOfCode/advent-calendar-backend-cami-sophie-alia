@@ -7,3 +7,7 @@ export const pool = new pg.Pool({
     rejectUnauthorized: false,
   },
 });
+
+export function query(text, params) {
+  return pool.query(text, params);
+}
